@@ -9,13 +9,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4CAF50; /* Green background */
+  background-color: #2e8b57; /* Nature green background */
   padding: 10px 20px;
 }
 
 /* Logo styles */
 .logo {
-  color: white;
+  color: #e0f7fa; /* Light blue for logo text */
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -31,16 +31,16 @@ nav {
 }
 
 .nav-links a {
-  color: white;
+  color: #e0f7fa; /* Light blue for nav links */
   text-decoration: none;
   font-size: 1em;
 }
 
 /* Hamburger menu icon styles */
 .menu-icon {
-  display: none; /* Hide by default on larger screens */
+  display: none;
   font-size: 2em;
-  color: white;
+  color: #e0f7fa; /* Light blue for menu icon */
   cursor: pointer;
 }
 
@@ -78,12 +78,13 @@ h1, p {
 /* Use easy-to-read, eco-friendly font combo */
 body {
   font-family: 'Segoe UI', 'Arial', sans-serif;
-  background-color: #e6f7ef; /* Light eco-friendly background */
-  color: #1b3a2b; /* Dark green for text */
+  background-color: #e3fcec; /* Very light green background */
+  color: #205072; /* Deep blue for text */
 }
 
 h1, h2 {
   font-family: 'Montserrat', 'Arial', sans-serif;
+  color: #205072; /* Deep blue for headers */
 }
 
 /* Hero section styles with Vancouver background */
@@ -98,7 +99,7 @@ h1, h2 {
   max-width: 900px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(32,80,114,0.08); /* Softer blue shadow */
 }
 
 /* Vancouver background image */
@@ -116,25 +117,25 @@ h1, h2 {
   position: relative;
   z-index: 2;
   text-align: center;
-  color: #fff;
+  color: #e0f7fa; /* Light blue for hero text */
   padding: 40px 20px;
 }
 
 .hero-content h2 {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #b2dfdb; /* Soft green-blue for eco theme */
+  color: #fff; /* White for better contrast */
 }
 
 .hero-content p {
   font-size: 1.1em;
   margin-bottom: 20px;
-  color: #e3f2fd; /* Soft blue for eco theme */
+  color: #b2dfdb; /* Soft blue-green for eco theme */
 }
 
 .cta-btn {
-  background-color: #228B22; /* Green */
-  color: white;
+  background-color: #388e3c; /* Strong green */
+  color: #e0f7fa; /* Light blue text */
   padding: 12px 28px;
   border: none;
   border-radius: 25px;
@@ -142,12 +143,12 @@ h1, h2 {
   font-size: 1em;
   font-weight: bold;
   transition: background 0.2s;
-  box-shadow: 0 2px 6px rgba(34,139,34,0.1);
+  box-shadow: 0 2px 6px rgba(46,139,87,0.12); /* Green shadow */
   display: inline-block;
 }
 
 .cta-btn:hover {
-  background-color: #1565c0; /* Blue on hover */
+  background-color: #1976d2; /* Blue on hover */
 }
 
 /* Responsive hero section for mobile */
