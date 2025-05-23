@@ -169,10 +169,9 @@ h1, h2 {
 
 /* Container for all cards */
 .cards-container {
-  display: flex;
-  justify-content: center; /* Center the cards horizontally */
-  flex-wrap: wrap; /* Allow cards to wrap on small screens */
-  gap: 20px; /* Space between cards */
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  gap: 15px; /* Space between cards set to 15px */
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -187,6 +186,7 @@ h1, h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5px; /* Add margin around each card */
 }
 
 /* Move text above the image in the card */
@@ -198,12 +198,12 @@ h1, h2 {
 
 /* Card image styles */
 .card img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
+  max-width: 100%; /* Make images responsive */
+  height: auto;    /* Keep image aspect ratio */
   border-radius: 8px;
-  margin-top: 10px; /* Add space above image */
-  margin-bottom: 0; /* Remove bottom margin since text is above */
+  margin-top: 10px;
+  margin-bottom: 0;
+  /* width and height set by max-width/auto for responsiveness */
 }
 
 /* Card title styles */
@@ -226,11 +226,28 @@ h1, h2 {
 /* Responsive cards: stack vertically on small screens */
 @media (max-width: 700px) {
   .cards-container {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    max-width: 95%;
+    gap: 15px; /* Keep 15px gap on mobile */
   }
   .card {
-    width: 90%;
+    width: 100%;
     max-width: 320px;
+    margin: 5% auto; /* Keep margin on mobile, center card */
+  }
+}
+
+/* Adjust layout and spacing for screens 600px and wider */
+@media (min-width: 600px) {
+  .cards-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop/tablet */
+    gap: 15px; /* 15px gap between cards */
+    max-width: 1100px;
+  }
+  .card {
+    width: 100%;
+    max-width: 260px;
+    padding: 24px;
+    margin: 5%; /* Keep margin on desktop */
   }
 }
