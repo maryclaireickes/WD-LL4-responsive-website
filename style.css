@@ -171,7 +171,7 @@ h1, h2 {
 .cards-container {
   display: grid; /* Use grid for layout */
   grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
-  gap: 15px; /* Space between cards set to 15px */
+  gap: 30px; /* Increased space between cards */
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -182,11 +182,11 @@ h1, h2 {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(32,80,114,0.08); /* Soft blue shadow */
   padding: 20px;
-  width: 220px;
+  width: 200px; /* Set each card to 200px wide */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px; /* Add margin around each card */
+  margin: 5px;
 }
 
 /* Move text above the image in the card */
@@ -198,12 +198,13 @@ h1, h2 {
 
 /* Card image styles */
 .card img {
-  max-width: 100%; /* Make images responsive */
-  height: auto;    /* Keep image aspect ratio */
+  width: 100%;        /* All images fill the card width */
+  max-width: 100%;    /* Prevent images from overflowing */
+  height: 120px;      /* Same height for all images */
+  object-fit: cover;  /* Crop images to fill the area */
   border-radius: 8px;
   margin-top: 10px;
   margin-bottom: 0;
-  /* width and height set by max-width/auto for responsiveness */
 }
 
 /* Card title styles */
@@ -228,12 +229,12 @@ h1, h2 {
   .cards-container {
     grid-template-columns: 1fr; /* 1 column on mobile */
     max-width: 95%;
-    gap: 15px; /* Keep 15px gap on mobile */
+    gap: 20px; /* Space between cards on mobile */
   }
   .card {
     width: 100%;
     max-width: 320px;
-    margin: 5% auto; /* Keep margin on mobile, center card */
+    margin: 5% auto;
   }
 }
 
@@ -241,13 +242,13 @@ h1, h2 {
 @media (min-width: 600px) {
   .cards-container {
     grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop/tablet */
-    gap: 15px; /* 15px gap between cards */
+    gap: 15px;
     max-width: 1100px;
   }
   .card {
-    width: 100%;
-    max-width: 260px;
+    width: 200px; /* Keep card width 200px on desktop */
+    max-width: 200px;
     padding: 24px;
-    margin: 5%; /* Keep margin on desktop */
+    margin: 5%;
   }
 }
