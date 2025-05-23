@@ -79,7 +79,6 @@ h1, p {
 body {
   font-family: 'Segoe UI', 'Arial', sans-serif;
   /* Set a new topography map as the background with a green overlay */
-  background-color: #e3f4fc; /* Fallback light blue */
   background-image:
     linear-gradient(rgba(19, 89, 49, 0.18), rgba(19, 89, 49, 0.5)), /* green overlay */
     url('https://static.vecteezy.com/system/resources/previews/016/828/104/non_2x/topographic-background-and-texture-abstraction-with-place-for-text-topo-backdrop-lines-contour-geographic-grid-modern-black-and-white-topographic-contours-lines-of-mountains-topography-map-art-vector.jpg');
