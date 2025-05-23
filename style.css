@@ -1,0 +1,150 @@
+/* Basic reset for margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50; /* Green background */
+  padding: 10px 20px;
+}
+
+/* Logo styles */
+.logo {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Navigation links styles */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* Hamburger menu icon styles */
+.menu-icon {
+  display: none; /* Hide by default on larger screens */
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none; /* Hide links on small screens */
+    flex-direction: column;
+    background-color: #4CAF50;
+    position: absolute;
+    top: 50px; /* Below the navbar */
+    right: 0;
+    width: 100%;
+  }
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .menu-icon {
+    display: block; /* Show hamburger icon on small screens */
+  }
+}
+
+/* Show the menu when active (we'll add JS for this later) */
+.nav-links.active {
+  display: flex;
+}
+
+/* Add some spacing to the main content */
+h1, p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Use easy-to-read, eco-friendly font combo */
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background-color: #e6f7ef; /* Light eco-friendly background */
+  color: #1b3a2b; /* Dark green for text */
+}
+
+h1, h2 {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #b2dfdb 0%, #e3f2fd 100%); /* Green to blue gradient */
+  padding: 30px 10px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h2 {
+  color: #228B22; /* Eco green */
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  color: #1565c0; /* Eco blue */
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.cta-btn {
+  background-color: #228B22; /* Green */
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.2s;
+  box-shadow: 0 2px 6px rgba(34,139,34,0.1);
+}
+
+.cta-btn:hover {
+  background-color: #1565c0; /* Blue on hover */
+}
+
+/* Responsive hero section for mobile */
+@media (max-width: 600px) {
+  .hero {
+    padding: 15px 5px;
+  }
+  .hero-img {
+    max-width: 100%;
+  }
+}
