@@ -160,3 +160,77 @@ h1, h2 {
     min-height: 220px;
   }
 }
+
+/* Destinations cards section styles */
+.destinations {
+  margin: 40px 0;
+  text-align: center; /* Center the section title if added */
+}
+
+/* Container for all cards */
+.cards-container {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  flex-wrap: wrap; /* Allow cards to wrap on small screens */
+  gap: 20px; /* Space between cards */
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Individual card styles */
+.card {
+  background-color: #f0faf4; /* Very light green for card background */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(32,80,114,0.08); /* Soft blue shadow */
+  padding: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Move text above the image in the card */
+.card h3,
+.card p {
+  /* No changes needed here, just order in HTML */
+  margin: 0 0 10px 0;
+}
+
+/* Card image styles */
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px; /* Add space above image */
+  margin-bottom: 0; /* Remove bottom margin since text is above */
+}
+
+/* Card title styles */
+.card h3 {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  color: #205072; /* Deep blue */
+  font-size: 1.1em;
+  margin: 10px 0 8px 0;
+}
+
+/* Card description styles */
+.card p {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  color: #388e3c; /* Nature green */
+  font-size: 0.97em;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive cards: stack vertically on small screens */
+@media (max-width: 700px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+}
