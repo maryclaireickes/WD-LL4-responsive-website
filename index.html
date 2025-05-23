@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>LiveLab 4 Demo</title>
+  <title>EcoVenture Travel</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <!-- Google Fonts: Montserrat for headers, Open Sans for body text -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
@@ -15,13 +15,13 @@
   <!-- Navigation bar starts here -->
   <nav>
     <!-- Website logo or name -->
-    <div class="logo">TravelSite</div>
+    <div class="logo">EcoVenture</div>
     <!-- Navigation links -->
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Destinations</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <!-- Hamburger menu icon for mobile -->
     <div class="menu-icon">&#9776;</div>
@@ -33,7 +33,7 @@
     The h1 and h2 headers will use the Montserrat font.
     The rest of the text will use Open Sans.
   -->
-  <h1>Welcome to TravelSite!</h1>
+  <h1>Welcome to EcoVenture!</h1>
   <p>Discover amazing places around the world.</p>
 
   <!-- Hero section starts here -->
@@ -43,13 +43,13 @@
     <div class="hero-content">
       <h2>Travel for a Greener Tomorrow</h2>
       <p>Join our mission to explore the world sustainably and protect our planet, one adventure at a time.</p>
-      <a href="https://www.google.com/flights" class="cta-btn" target="_blank">Start Exploring</a>
+      <a href="#destinations" class="cta-btn">Start Exploring</a>
     </div>
   </section>
   <!-- Hero section ends here -->
 
   <!-- Destinations cards section starts here -->
-  <section class="destinations">
+  <section class="destinations" id="destinations">
     <!-- Cards container -->
     <div class="cards-container">
       <!-- Card 1 -->
@@ -88,6 +88,44 @@
     </div>
   </section>
   <!-- Destinations cards section ends here -->
+
+  <!-- About section starts here -->
+  <section class="about" id="about">
+    <!-- Card for About section -->
+    <div class="about-card">
+      <h2>About EcoVenture</h2>
+      <p>
+        EcoVenture is your guide to eco-friendly travel and hiking adventures. We believe in exploring the world while protecting nature. Our mission is to help you discover beautiful destinations and enjoy the outdoors in a sustainable way.
+      </p>
+      <!-- Employee photos -->
+      <div class="employees">
+        <!-- Employee 1 -->
+        <div class="employee">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Employee John" />
+          <p>John - Eco Guide</p>
+        </div>
+        <!-- Employee 2 -->
+        <div class="employee">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Employee Sarah" />
+          <p>Sarah - Adventure Planner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About section ends here -->
+
+  <!-- Contact section starts here -->
+  <section class="contact" id="contact">
+    <!-- Card for Contact section -->
+    <div class="contact-card">
+      <h2>Contact Us</h2>
+      <!-- Contact info with icons using emojis for simplicity -->
+      <p><span class="icon">📧</span> Email: info@ecoventure.com</p>
+      <p><span class="icon">📞</span> Phone: (123) 456-7890</p>
+      <p><span class="icon">📍</span> Address: 123 Greenway Lane, Adventure City, Country</p>
+    </div>
+  </section>
+  <!-- Contact section ends here -->
 
   <script src="script.js"></script>
 </body>

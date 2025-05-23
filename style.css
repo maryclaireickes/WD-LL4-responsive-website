@@ -9,7 +9,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2e8b57; /* Nature green background */
+  background-color: #135931; /* Nature green background */
   padding: 10px 20px;
 }
 
@@ -49,7 +49,7 @@ nav {
   .nav-links {
     display: none; /* Hide links on small screens */
     flex-direction: column;
-    background-color: #4CAF50;
+    background-color: #135931;
     position: absolute;
     top: 50px; /* Below the navbar */
     right: 0;
@@ -78,7 +78,12 @@ h1, p {
 /* Use easy-to-read, eco-friendly font combo */
 body {
   font-family: 'Segoe UI', 'Arial', sans-serif;
-  background-color: #e3fcec; /* Very light green background */
+  /* Set a mountain topography map as the background */
+  background-color: #e3f4fc; /* Fallback light blue */
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #205072; /* Deep blue for text */
 }
 
@@ -134,7 +139,7 @@ h1, h2 {
 }
 
 .cta-btn {
-  background-color: #388e3c; /* Strong green */
+  background-color: #2a4e97; /* Strong green */
   color: #e0f7fa; /* Light blue text */
   padding: 12px 28px;
   border: none;
@@ -148,7 +153,7 @@ h1, h2 {
 }
 
 .cta-btn:hover {
-  background-color: #1976d2; /* Blue on hover */
+  background-color: #2a4e97; /* Blue on hover */
 }
 
 /* Responsive hero section for mobile */
@@ -218,7 +223,7 @@ h1, h2 {
 /* Card description styles */
 .card p {
   font-family: 'Open Sans', 'Arial', sans-serif;
-  color: #388e3c; /* Nature green */
+  color: #135931; /* Nature green */
   font-size: 0.97em;
   margin: 0;
   line-height: 1.4;
@@ -250,5 +255,59 @@ h1, h2 {
     max-width: 200px;
     padding: 24px;
     margin: 5%;
+  }
+}
+
+/* About and Contact card styles (mobile first) */
+.about-card, .contact-card {
+  background-color: #e3f4fc; /* Light blue card background */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(32,80,114,0.08);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 340px;
+  text-align: center;
+}
+
+/* Employee photos in About section */
+.employees {
+  display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
+  align-items: center;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.employee img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Make images round */
+  object-fit: cover;
+  margin-bottom: 6px;
+  border: 2px solid #135931; /* Green border */
+}
+
+.employee p {
+  margin: 0;
+  font-size: 1em;
+  color: #205072;
+}
+
+/* Contact icons */
+.icon {
+  font-size: 1.2em;
+  margin-right: 6px;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 600px) {
+  .about-card, .contact-card {
+    max-width: 600px;
+    padding: 32px;
+  }
+  .employees {
+    flex-direction: row; /* Show employee photos side by side */
+    justify-content: center;
+    gap: 32px;
   }
 }
