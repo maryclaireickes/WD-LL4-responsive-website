@@ -44,6 +44,47 @@ nav {
   cursor: pointer;
 }
 
+/* Simple navigation bar styles for header */
+.simple-navbar {
+  background-color: #135931; /* Green background */
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and links */
+}
+
+/* Logo/title in the left corner */
+.simple-logo {
+  color: #fff; /* White text for logo */
+  font-size: 1.3em;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+/* Simple navigation bar links styles */
+.simple-nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-right: 30px;
+}
+
+.simple-nav-links li a {
+  color: #fff; /* White text for nav links */
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  transition: color 0.2s;
+}
+
+.simple-nav-links li a:hover {
+  color: #b2dfdb; /* Lighter blue on hover */
+}
+
 /* Responsive styles for mobile */
 @media (max-width: 600px) {
   .nav-links {
